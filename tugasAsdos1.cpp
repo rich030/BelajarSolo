@@ -1,6 +1,6 @@
 /*
 Demonstrate a queue system.
-In this case; use "1" for push, use "2" for pop, use "3" for print.
+In this case, use "1" for push, use "2" for pop, use "3" for print.
 */
 
 #include <iostream>
