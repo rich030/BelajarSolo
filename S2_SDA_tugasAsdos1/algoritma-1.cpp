@@ -56,9 +56,5 @@ int main(){
 		auto rdt = rt1 - rt0;
 		long long rdtms = duration_cast<microseconds>(rdt).count();
 		printf("%d \n", rdt);
-
-
-		//cout << "n= " << n << "\t" << bdt << "\t\t" << wdt << "\t\t" << adt << endl;
-		//printf("n= %d \t %d \t\t %d \t\t %d \n",n, bdt,wdt,adt);
 	}
 }
