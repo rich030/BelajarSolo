@@ -27,7 +27,9 @@
 *.lib
 
 # Executables
-*.exe
+.exe
 *.out
 *.app
-tempCodeRunnerFile.cpp
+
+.vscode
+.ignore

@@ -1,8 +1,13 @@
+/*
+Create An 3 Integer fibonnaci sequence
+E.g, 1, 1, 2, 4, 7, etc
+*/
+
 #include <iostream>
 #define MOD 100000007
 using namespace std;
 
-
+// 3 integer fibonnaci algorithm
 void alg (int n){
         int suku1=1,suku2=1,suku3=2;
         unsigned long long int next;
