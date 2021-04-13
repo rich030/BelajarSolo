@@ -44,11 +44,9 @@ int main(){
 		auto wt0 = high_resolution_clock::now();
 		STAY(worst, n);
 		auto wt1 = high_resolution_clock::now();
-		auto wdt = wt1 - wt0;
-		
+		auto wdt = wt1 - wt0;		
 		long long wdtms = duration_cast<microseconds>(wdt).count();
 		printf("%d \t", wdt);
-		//cout << "Worst= " << wdt << endl;
 
 		auto rt0 = high_resolution_clock::now();
 		STAY(random, n);
