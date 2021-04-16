@@ -1,5 +1,6 @@
 #include<iostream>
 #include<chrono>
+#include <cstdio>
 #include<time.h>
 using namespace std;
 using namespace std::chrono;
@@ -46,4 +47,27 @@ int eraseAT(string str) {
 				str[i] = str[k];
 	return 0;
 }
+char getRandomChar(){
+    static char c = 'A' + rand()%24;
+    return c;    
+    }
 
+int main(){
+	srand((unsigned)time(0));	
+    char str[9999] = "test";
+    char buffer[sizeof(str)+1];
+    char rnd = getRandomChar();
+    sprintf(buffer, "%s%c",str,rnd);
+
+	cout << "RandomCase" << "\n";
+	for (int n = 100; n <= 10000; n = n + 1000)
+	{
+		auto rt0 = high_resolution_clock::now();
+		eraseAT(buffer);
+		auto rt1 = high_resolution_clock::now();
+		auto rdt = rt1 - rt0;
+		long long rdtms = duration_cast<microseconds>(rdt).count();
+		printf("%d  \n", rdt);
+
+	}
+}

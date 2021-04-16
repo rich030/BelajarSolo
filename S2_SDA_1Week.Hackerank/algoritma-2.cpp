@@ -31,7 +31,7 @@ int main(){
 			worst[i] = n-i;
 			random[i] = rand() % 10000;
 		}
-		printf("n = %d \t", n);
+		printf("n = %d \t", n); 
 
 		auto bt0 = high_resolution_clock::now();
 		HOME(best, n);
