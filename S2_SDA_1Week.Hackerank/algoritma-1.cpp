@@ -9,7 +9,7 @@ void swap(int * xp, int * yp){
 	*xp = *yp;
 	*yp = temp;
 }
-void STAY(int arr[], int n){
+void sort(int arr[], int n){
 	int i, j;
 	for(i=0; i<n-1; i++){
 		for(j=0; j<n-i-1; j++){
@@ -35,21 +35,21 @@ int main(){
 		printf("n = %d \t", n);
 
 		auto bt0 = high_resolution_clock::now();
-		STAY(best, n);
+		sort(best, n);
 		auto bt1 = high_resolution_clock::now();
 		auto bdt = bt1 - bt0;
 		long long bdtms = duration_cast<microseconds>(bdt).count();
 		printf("%d \t", bdt);
 
 		auto wt0 = high_resolution_clock::now();
-		STAY(worst, n);
+		sort(worst, n);
 		auto wt1 = high_resolution_clock::now();
 		auto wdt = wt1 - wt0;		
 		long long wdtms = duration_cast<microseconds>(wdt).count();
 		printf("%d \t", wdt);
 
 		auto rt0 = high_resolution_clock::now();
-		STAY(random, n);
+		sort(random, n);
 		auto rt1 = high_resolution_clock::now();
 		auto rdt = rt1 - rt0;
 		long long rdtms = duration_cast<microseconds>(rdt).count();
