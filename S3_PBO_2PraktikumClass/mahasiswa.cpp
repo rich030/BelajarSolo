@@ -14,9 +14,9 @@ public:
         alamat = a;
     }
     void getMahasiswa(){
-    cout << "nama mhs : " << nama << endl;
-    cout << "jenis kelamin mhs : " << jenisKelamin << endl;
-    cout << "alamat mhs : " << alamat << endl;
+        cout << "nama mhs : " << nama << endl;
+        cout << "jenis kelamin mhs : " << jenisKelamin << endl;
+        cout << "alamat mhs : " << alamat << endl;
     }
 };
 
