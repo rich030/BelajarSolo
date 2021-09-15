@@ -21,6 +21,7 @@ public:
         delete p;
         cout << "mem_cleared" << endl;
     }
+    //method untuk input matrix
     void input(){
         cout << "Input Isi Matrix" << endl;
         for (int i = 0; i < n; i++)
